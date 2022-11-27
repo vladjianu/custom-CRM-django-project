@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+# request is a paramater that contains information about the browser(post or get request)
+def index(request):
+    return render(request, 'core/index.html')
